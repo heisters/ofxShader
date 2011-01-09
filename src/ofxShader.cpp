@@ -233,62 +233,62 @@ void ofxShader::setUniform4v(const char* name, float* v, int count) {
 
 void ofxShader::setAttribute(const char* name, short v1) {
 	if(bLoaded)
-		glVertexAttrib1s(getLoc(name), v1);
+		glVertexAttrib1s(getAttributeLocation(name), v1);
 }
 
 void ofxShader::setAttribute(const char* name, short v1, short v2) {
 	if(bLoaded)
-		glVertexAttrib2s(getLoc(name), v1, v2);
+		glVertexAttrib2s(getAttributeLocation(name), v1, v2);
 }
 
 void ofxShader::setAttribute(const char* name, short v1, short v2, short v3) {
 	if(bLoaded)
-		glVertexAttrib3s(getLoc(name), v1, v2, v3);
+		glVertexAttrib3s(getAttributeLocation(name), v1, v2, v3);
 }
 
 void ofxShader::setAttribute(const char* name, short v1, short v2, short v3, short v4) {
 	if(bLoaded)
-		glVertexAttrib4s(getLoc(name), v1, v2, v3, v4);
+		glVertexAttrib4s(getAttributeLocation(name), v1, v2, v3, v4);
 }
 
 void ofxShader::setAttribute(const char* name, float v1) {
 	if(bLoaded)
-		glVertexAttrib1f(getLoc(name), v1);
+		glVertexAttrib1f(getAttributeLocation(name), v1);
 }
 
 void ofxShader::setAttribute(const char* name, float v1, float v2) {
 	if(bLoaded)
-		glVertexAttrib2f(getLoc(name), v1, v2);
+		glVertexAttrib2f(getAttributeLocation(name), v1, v2);
 }
 
 void ofxShader::setAttribute(const char* name, float v1, float v2, float v3) {
 	if(bLoaded)
-		glVertexAttrib3f(getLoc(name), v1, v2, v3);
+		glVertexAttrib3f(getAttributeLocation(name), v1, v2, v3);
 }
 
 void ofxShader::setAttribute(const char* name, float v1, float v2, float v3, float v4) {
 	if(bLoaded)
-		glVertexAttrib4f(getLoc(name), v1, v2, v3, v4);
+		glVertexAttrib4f(getAttributeLocation(name), v1, v2, v3, v4);
 }
 
 void ofxShader::setAttribute(const char* name, double v1) {
 	if(bLoaded)
-		glVertexAttrib1d(getLoc(name), v1);
+		glVertexAttrib1d(getAttributeLocation(name), v1);
 }
 
 void ofxShader::setAttribute(const char* name, double v1, double v2) {
 	if(bLoaded)
-		glVertexAttrib2d(getLoc(name), v1, v2);
+		glVertexAttrib2d(getAttributeLocation(name), v1, v2);
 }
 
 void ofxShader::setAttribute(const char* name, double v1, double v2, double v3) {
 	if(bLoaded)
-		glVertexAttrib3d(getLoc(name), v1, v2, v3);
+		glVertexAttrib3d(getAttributeLocation(name), v1, v2, v3);
 }
 
 void ofxShader::setAttribute(const char* name, double v1, double v2, double v3, double v4) {
 	if(bLoaded)
-		glVertexAttrib4d(getLoc(name), v1, v2, v3, v4);
+		glVertexAttrib4d(getAttributeLocation(name), v1, v2, v3, v4);
 }
 
 void ofxShader::setAttributeLocation(const char* name, int index) {
